@@ -3,15 +3,13 @@ import leandro from "../images/leandro-landscape.jpeg";
 import tenko from "../images/tenko.jpg";
 import BadgeCollection from "../Components/BadgeCollection";
 import Image from "next/image";
-import { Download } from "lucide-react";
 import { motion } from "framer-motion";
 import ContactMe from "../Components/ContactMe";
-import { Button } from "@/components/ui/button";
 import ResumeDownloadButton from "../Components/ResumeDownloadButton";
 
 export default function About() {
     return (
-        <ArticleLayout title="About" image={leandro.src} cta="Resume" ctaIcon={<Download />} leftButton={
+        <ArticleLayout title="About" image={leandro.src} leftButton={
             <ResumeDownloadButton />
         }>
             <BadgeCollection badges={[

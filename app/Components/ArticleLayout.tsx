@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { X } from "lucide-react"
-import { useContext, cloneElement } from "react"
+import { useContext } from "react"
 import { PageContext } from "@/app/Controllers/pageContext"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"

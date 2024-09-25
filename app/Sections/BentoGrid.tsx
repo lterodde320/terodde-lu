@@ -8,17 +8,17 @@ import sojaMockup from "../images/soja-mockup.png";
 import Image from "next/image";
 import simonRivers from "../images/simonrivers.jpg";
 
-const Background = ({ image, className, style, ...props }: { image: string, className: string, style?: any, props?: any }) => {
-    return <Image
-        src={image}
-        alt="Tenko"
-        width={500}
-        height={500}
-        className={className}
-        style={style}
-        {...props}
-    />
-}
+// const Background = ({ image, className, style, ...props }: { image: string, className: string, style?: any, props?: any }) => {
+//     return <Image
+//         src={image}
+//         alt="Tenko"
+//         width={500}
+//         height={500}
+//         className={className}
+//         style={style}
+//         {...props}
+//     />
+// }
 
 const features = [
     {
@@ -94,7 +94,7 @@ const features = [
         description: "Online Ticketing Platform",
         page: "about",
         cta: "Learn more",
-        background: <img className="absolute -right-20 -top-20 opacity-60" />,
+        background: <a />,
         className: `lg:col-start-1 lg:col-end-5 lg:row-start-2 lg:row-end-3`,
     },
     {
@@ -126,7 +126,7 @@ const features = [
             "",
         page: "about",
         cta: "Learn more",
-        background: <img className="absolute opacity-60" />,
+        background: <a />,
         className: `lg:col-start-9 lg:col-end-13 lg:row-start-2 lg:row-end-3`,
     },
 ];

@@ -1,9 +1,6 @@
 import ArticleLayout from "../Components/ArticleLayout"
-import leandro from "../images/leandro-landscape.jpeg";
 import tenko from "../images/tenko.jpg";
-import BadgeCollection from "../Components/BadgeCollection";
 import Image from "next/image";
-import { Download } from "lucide-react";
 import { motion } from "framer-motion";
 import addrest from "../images/addrest-landscape.jpg";
 import { Button } from "@/components/ui/button";
@@ -23,7 +20,7 @@ export default function About() {
                 <p className="text-justify">
                     Addrest was born out of frustration. I was working for a startup that
                     was handling addresses in a very casual manner. With too many things to do and not many
-                    people working at the company, the problem wasn't taken very seriously. Over time, 
+                    people working at the company, the problem wasn&apos;t taken very seriously. Over time, 
                     the company showed great success, hiring more and more people, entering more and more data.
                     <br />
                     The first signs of data inconsistency started to appear: the marketing department wanted to 
