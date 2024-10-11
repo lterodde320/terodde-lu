@@ -62,7 +62,7 @@ const features = [
         Icon: null,
         name: "Soja",
         description: "JSON Viewer & Editor",
-        page: "about",
+        page: "soja",
         cta: "Learn more",
         background: (
             <div className="bg-[#282a36] absolute opacity-100 w-full h-full ">
@@ -92,7 +92,7 @@ const features = [
         Icon: null,
         name: "LuxTix",
         description: "Online Ticketing Platform",
-        page: "about",
+        page: "luxtix",
         cta: "Learn more",
         background: <a />,
         className: `lg:col-start-1 lg:col-end-5 lg:row-start-2 lg:row-end-3`,
@@ -101,7 +101,7 @@ const features = [
         Icon: null,
         name: "Simon Rivers",
         description: "Music",
-        page: "about",
+        page: "simonrivers",
         cta: "Learn more",
         background: (
             <div>
@@ -124,7 +124,7 @@ const features = [
         name: "Certifications",
         description:
             "",
-        page: "about",
+        page: "certifications",
         cta: "Learn more",
         background: <a />,
         className: `lg:col-start-9 lg:col-end-13 lg:row-start-2 lg:row-end-3`,

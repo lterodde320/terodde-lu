@@ -8,7 +8,7 @@ export default function BadgeCollection({badges}: {badges: {name: string, color:
             <Badge
               key={badge.name}
               variant="secondary"
-              className="flex items-center gap-1 px-3 py-1 text-sm font-medium bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200"
+              className="flex items-center gap-1 px-3 py-1 text-sm font-bold bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-colors duration-200"
             >
               <span>{badge.name}</span>
             </Badge>
