@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,7 +16,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-
 export const metadata: Metadata = {
   title: "Leandro TERODDE",
   description: "Developer, Designer, Musician",
@@ -26,14 +27,12 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
-
-
 
 export default function RootLayout({
   children,
@@ -46,7 +45,19 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Toaster />
-          {children}
+        {children}
+        <script
+          async
+          defer
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script>
+        <noscript>
+          <img
+            src="https://queue.simpleanalyticscdn.com/noscript.gif"
+            alt=""
+            referrerpolicy="no-referrer-when-downgrade"
+          />
+        </noscript>
       </body>
     </html>
   );

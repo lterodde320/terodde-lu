@@ -56,10 +56,10 @@ export default function About() {
         <p className="text-justify">
           As you can imagine, I wasn&apos;t a fan of checking things manually. I
           had proposed beforehand to let everything run through the Google Maps
-          API, but my proposal was ignored. We've already tried using the Google
-          Maps API to format addresses for another project with very mixed
-          results. Combined with the fact that it gets expensive very quickly,
-          this just wasn&apos;t an option for us.
+          API, but my proposal was ignored. We&apos;ve already tried using the
+          Google Maps API to format addresses for another project with very
+          mixed results. Combined with the fact that it gets expensive very
+          quickly, this just wasn&apos;t an option for us.
           <br />
           This is when I decided to take matters into my own hands. I had
           recognized the need for a tool that could{" "}
