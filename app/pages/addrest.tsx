@@ -89,6 +89,7 @@ export default function About() {
         </p>
       </motion.div>
       <CTA
+        slug="addrest_io_trial"
         catchPhrase="Try it out yourself!"
         title="Visit Addrest.io"
         icon={<Navigation className="w-5 h-5 mr-2" />}

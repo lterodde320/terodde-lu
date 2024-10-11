@@ -108,6 +108,7 @@ export default function About() {
         <br />
         <p>Looking forward to hearing from you :)</p>
         <CTA
+          slug="contact_me"
           catchPhrase="Let's work together!"
           title="Contact Me"
           icon={<Mail className="w-5 h-5 mr-2" />}

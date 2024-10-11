@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Moon, Sun, Github, Linkedin, Music } from "lucide-react";
+import HeroButton from "../Components/HeroButtons";
 import { Button } from "@/components/ui/button";
+
 import useTheme from "../Controllers/useTheme";
 
 export default function Component() {
@@ -45,36 +47,23 @@ export default function Component() {
         transition={{ delay: 0.5, duration: 0.8 }}
         className="flex space-x-4 mb-8"
       >
-        <Button variant="ghost" size="icon" asChild className="black">
-          <a
-            href="https://github.com/lterodde320"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github className="h-8 w-8 text-gray-800 dark:text-gray-200" />
-            <span className="sr-only">GitHub</span>
-          </a>
-        </Button>
-        <Button variant="ghost" size="icon" asChild>
-          <a
-            href="https://open.spotify.com/artist/3YAwIM8Crduwk4rpRlpdHJ?si=yRBgPiERQryX98VYypwvQg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Music className="h-8 w-8 text-gray-800 dark:text-gray-200" />
-            <span className="sr-only">Spotify</span>
-          </a>
-        </Button>
-        <Button variant="ghost" size="icon" asChild>
-          <a
-            href="https://linkedin.com/in/leandroterodde"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <HeroButton
+          icon={<Github className="h-8 w-8 text-gray-800 dark:text-gray-200" />}
+          href="https://github.com/lterodde320"
+          slug="github"
+        />
+        <HeroButton
+          icon={<Music className="h-8 w-8 text-gray-800 dark:text-gray-200" />}
+          href="https://open.spotify.com/artist/3YAwIM8Crduwk4rpRlpdHJ?si=yRBgPiERQryX98VYypwvQg"
+          slug="spotify"
+        />
+        <HeroButton
+          icon={
             <Linkedin className="h-8 w-8 text-gray-800 dark:text-gray-200" />
-            <span className="sr-only">LinkedIn</span>
-          </a>
-        </Button>
+          }
+          href="https://www.linkedin.com/in/lterodde/"
+          slug="linkedin"
+        />
       </motion.div>
     </div>
   );

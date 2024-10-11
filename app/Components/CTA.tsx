@@ -6,11 +6,13 @@ export default function CTA({
   onClick,
   icon,
   catchPhrase,
+  slug,
 }: {
   title: string;
   onClick?: () => void;
   icon?: React.ReactNode;
   catchPhrase?: string;
+  slug: string;
 }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -20,7 +22,10 @@ export default function CTA({
         {catchPhrase}
       </h2>
       <motion.a
-        onClick={onClick}
+        onClick={() => {
+          window.sa_event("cta_click", { slug: slug });
+          onClick?.();
+        }}
         className={`
           inline-flex items-center px-6 py-3 text-base font-semibold text-white rounded-md
           bg-gray-900 hover:bg-gray-700

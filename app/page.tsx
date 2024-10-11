@@ -5,9 +5,13 @@ import PageRenderer from "./Components/PageRenderer";
 import { PageContextProvider } from "./Controllers/pageContext";
 import Footer from "./Sections/Footer";
 
+declare global {
+  interface Window {
+    sa_event: (event: string, data?: Record<string, string>) => void;
+  }
+}
+
 export default function Home() {
-
-
   return (
     <PageContextProvider>
       <div className="bg-gray-100 dark:bg-black transition-colors duration-300">
