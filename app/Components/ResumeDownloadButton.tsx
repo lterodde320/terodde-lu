@@ -24,7 +24,10 @@ export default function ResumeDownloadButton() {
     e.preventDefault();
     // Here you would typically send the email to your server
     // This is a mock API call
-    window.sa_event("resume_download_button_click", { email });
+    fetch("https://hook.eu2.make.com/u4h70qzw9jrp00m1yvi4c88tn38to9ua", {
+      method: "POST",
+      body: JSON.stringify({ email }),
+    });
 
     toast({
       title: "Success!",
