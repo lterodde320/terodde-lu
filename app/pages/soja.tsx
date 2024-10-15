@@ -73,34 +73,52 @@ export default function Soja() {
       }
     >
       <motion.div className="text-justify lg:w-4/6">
-        <p className="font-bold font-xl">
-          Learning the consequences of not normalizing data
-        </p>
+        <h2 className="font-bold text-2xl">
+          A simple & functional JSON viewer
+        </h2>
+        <br />
         <p className="text-justify">
-          Addrest was born out of frustration. I was working for a startup that
-          was handling addresses in a very casual manner. With too many things
-          to do and not many people working at the company, the problem
-          wasn&apos;t taken very seriously. Over time, the company showed great
-          success, hiring more and more people, entering more and more data.
+          I love working with JSON. As a web developer, but also working in
+          implementation & operations teams, I&apos;ve been working a lot with
+          payloads delivered in a JSON format. However, I&apos;ve come quick to
+          realize that there aren't many tools out there to simply view or edit
+          JSON.
           <br />
-          The first signs of data inconsistency started to appear: the marketing
-          department wanted to start a new marketing campaign. The idea was to
-          send a postcard to leads with specific zip-codes.
+          <br />
+          Certainly I could&apos;ve used my trusty old <b>IDE</b>, and for
+          viewing purposes that works fine for the most part, especially if
+          you&apos;re using formatting plugins. However, sometimes the payloads
+          are just too big and I <b>quickly lose the overview</b>. The real pain
+          point is when you want to edit the JSON directly. Having to type in
+          every bracket, making sure you didn&apos;t forget the comma at the end
+          just to realize that you missed one at another spot is just{" "}
+          <b>painful</b>.
         </p>
+        <br />
         <p className="text-justify">
-          Throughout my career, I&apos;ve had the opportunity to work on a
-          diverse range of software projects—both contracted and personal. Each
-          project has been a new challenge, pushing me to expand my skills and
-          deliver solutions that make a difference.
+          I&apos;ve found much use in tools like the one at
+          jsoneditoronline.org. Since I naturally write in JavaScript, I found
+          it easy to just type in a function to format my JSON payloads, without
+          typing my modifications in an IDE or writing little programs just to
+          edit a payload. Jsoneditoronline.org is a great tool, but I missed
+          having a <b>dedicated app</b> for working with JSON, especially with
+          the importance it has in my day to day activities. I wanted to work on
+          multiple JSON files at once without having to open a browser.
+        </p>
+        <br />
+        <h2 className="font-bold text-2xl">Hola, Soy Soja</h2>
+        <br />
+        <p className="text-justify">
+          Soja solves all of that. It&apos;s a JSON viewer that allows you to
+          work with <b>multiple JSON files</b> at once, <b>format</b> them and
+          view them the way you want to. As simple as that. And it will be made{" "}
+          <b>open source</b>, too, making it one of the <b>best options</b> for
+          working with JSON files.
           <br />
-          I have a quality-driven approach, always striving to deliver the best
-          possible product in a given time frame. The user experience is at the
-          heart of everything I do. Staying up to date with the latest
-          technologies and best practices is crucial
           <br />
-          Whether I&apos;m writing code or producing music, I strive to create
-          work that resonates and leaves a lasting impact. Thank you for
-          visiting my website, and I look forward to connecting with you!
+          <i>Fun fact</i>: The name Soja is the German for soy, hence the
+          soybean logo. Looking for a name that was short and easy to remember,
+          I had found the name by twisting around the word J(A)SON. :)
         </p>
       </motion.div>
     </ArticleLayout>
