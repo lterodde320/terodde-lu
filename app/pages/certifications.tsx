@@ -8,8 +8,16 @@ export default function Certifications() {
   return (
     <ArticleLayout
       title="Certifications"
-      image={addrest.src}
       leftButton={<></>}
+      background={
+        <Image
+          src={addrest.src}
+          fill
+          alt="Article header image"
+          className="object-cover"
+          priority
+        />
+      }
     >
       <motion.div className="text-justify lg:w-4/6">
         <p className="font-bold font-xl">

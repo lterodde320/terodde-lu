@@ -4,24 +4,20 @@ import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import { useContext } from "react";
 import { PageContext } from "@/app/Controllers/pageContext";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function ArticleLayout({
   children,
   title,
-  image,
   leftButton,
   background,
 }: {
   children: React.ReactNode;
   title: string;
-  image: string;
   leftButton: React.ReactElement;
   background: React.ReactElement;
 }) {
   const { closePage } = useContext(PageContext);
-
   return (
     <div>
       <motion.div

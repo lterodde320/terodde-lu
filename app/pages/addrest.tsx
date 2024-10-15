@@ -11,7 +11,6 @@ export default function About() {
   return (
     <ArticleLayout
       title="Addrest.io"
-      image={addrest.src}
       leftButton={
         <Button
           variant="default"

@@ -10,7 +10,6 @@ export default function SimonRivers() {
   return (
     <ArticleLayout
       title="Simon Rivers"
-      image={addrest.src}
       leftButton={
         <Button
           variant="default"
@@ -18,6 +17,15 @@ export default function SimonRivers() {
         >
           View on Spotify <ExternalLink className="ml-2 h-4 w-4" />
         </Button>
+      }
+      background={
+        <Image
+          src={addrest.src}
+          fill
+          alt="Article header image"
+          className="object-cover"
+          priority
+        />
       }
     >
       <motion.div className="text-justify lg:w-4/6">

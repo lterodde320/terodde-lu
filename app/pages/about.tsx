@@ -31,7 +31,6 @@ export default function About() {
   return (
     <ArticleLayout
       title="About"
-      image={leandro.src}
       leftButton={<ResumeDownloadButton />}
       background={
         <Image

@@ -4,7 +4,6 @@ import sojaMockup from "../images/soja-mockup.png";
 import soja from "../images/soja.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import addrest from "../images/addrest-landscape.jpg";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import {
@@ -18,7 +17,6 @@ export default function Soja() {
   return (
     <ArticleLayout
       title="Soja"
-      image={addrest.src}
       leftButton={
         <TooltipProvider>
           <Tooltip>
@@ -81,8 +79,8 @@ export default function Soja() {
           I love working with JSON. As a web developer, but also working in
           implementation & operations teams, I&apos;ve been working a lot with
           payloads delivered in a JSON format. However, I&apos;ve come quick to
-          realize that there aren't many tools out there to simply view or edit
-          JSON.
+          realize that there aren&apos;t many tools out there to simply view or
+          edit JSON.
           <br />
           <br />
           Certainly I could&apos;ve used my trusty old <b>IDE</b>, and for
