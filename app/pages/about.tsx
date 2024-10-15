@@ -33,6 +33,16 @@ export default function About() {
       title="About"
       image={leandro.src}
       leftButton={<ResumeDownloadButton />}
+      background={
+        <Image
+          src={leandro.src}
+          fill
+          alt="Article header image"
+          className="object-cover"
+          priority
+          style={{ maskImage: "linear-gradient(0deg, transparent, white 30%)" }}
+        />
+      }
     >
       <BadgeCollection
         badges={[

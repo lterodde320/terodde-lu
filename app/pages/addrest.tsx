@@ -16,9 +16,20 @@ export default function About() {
         <Button
           variant="default"
           className="bg-white dark:bg-gray-800 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600"
+          onClick={() => window.open("https://addrest.io", "_blank")}
         >
           Visit Addrest.io <ExternalLink className="ml-2 h-4 w-4" />
         </Button>
+      }
+      background={
+        <Image
+          src={addrest.src}
+          fill
+          alt="Article header image"
+          className="object-cover"
+          priority
+          style={{ maskImage: "linear-gradient(0deg, transparent, white 30%)" }}
+        />
       }
     >
       <motion.div className="text-justify lg:w-4/6">
