@@ -37,26 +37,19 @@ export default function About() {
         </h2>
         <br />
         <p className="text-justify">
-          Addrest was born out of frustration. I was working for a startup that
-          was handling addresses carelessly.With too many things to do and not
-          many people working at the company, the problem wasn&apos;t taken very
-          seriously.
+          Addrest was born out of frustration. Having looked at and worked with a couple of 
+          CRM systems in the past, I&apos;ve noticed that <b>data quality</b> is 
+          often an issue not taken seriously enough. Especially small companies: 
+          with too much work to do and not enough people to do it, data, often 
+          typed in, is often neglected.
           <br />
-          Over time, the company showed great success, hiring more and more
+          Over time, when these companies show great success, they hire more and more
           people, entering more and more data.
           <br />
-          The <b>first signs of data inconsistency</b> started to appear: the
-          marketing department wanted to start a new campaign. The idea was to
-          send a postcard to leads with specific zip-codes. That{" "}
-          <b>the data was not reliable enough</b> was known. With{" "}
-          <b>postal codes written in the wrong fields</b>, we even had trouble
-          figuring out to what clients postcards should be sent.
-          <br />
-          Once we had a list of leads we were okay with, we had to{" "}
-          <b>manually check each entry</b> to make sure the address was correct,
-          double-checking each entry using Google Maps. As you can imagine, this
-          was a huge waste of time and resources. I remember spending an{" "}
-          <b>entire week</b> in front of a spreadsheet that just would not end.
+          But the <b>first signs of data inconsistency</b> start to appear rapidly: the
+          marketing department wants to start a new campaign. However, with{" "}
+          <b>postal codes written in the wrong fields</b>, they are having trouble
+          even figuring out what clients to target.
         </p>
         <br />
         <h2 className="font-bold text-2xl">
@@ -64,12 +57,11 @@ export default function About() {
         </h2>
         <br />
         <p className="text-justify">
-          As you can imagine, I wasn&apos;t a fan of checking things manually. I
-          had proposed beforehand to let everything run through the Google Maps
-          API, but my proposal was ignored. We&apos;ve already tried using the
-          Google Maps API to format addresses for another project with very
-          mixed results. Combined with the fact that it gets expensive very
-          quickly, this just wasn&apos;t an option for us.
+          As you can imagine, I&apos;m not a fan of checking things manually.
+          I&apos;ve already tried using the Google Maps API to 
+          format addresses with very mixed results. 
+          Combined with the fact that it gets expensive very
+          quickly, this just isn&apos;t a viable option
           <br />
           This is when I decided to take matters into my own hands. I had
           recognized the need for a tool that could{" "}
